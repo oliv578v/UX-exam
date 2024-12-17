@@ -1,0 +1,50 @@
+@import url('variables.css');
+
+h1 {
+    color:var(--primary-color);
+    text-align: center;
+    font-size:3rem;
+    margin-top:2rem;
+}
+
+#author-search-input {
+    width: 300px;
+    padding: 10px;
+    font-size: 16px;
+    border-radius:2rem;
+    border:none;
+    box-shadow: 3px 3px 4px  rgba(0,0,0,.1);
+}
+
+
+#search-bar {
+    text-align: center;
+    margin-bottom: 2rem;
+    margin-top:2rem;
+}
+
+#author-list{
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 5em));
+    gap: 3em;
+    margin-top: var(--bigMargin);
+    justify-content: center;
+    margin-bottom:4rem;
+}
+
+.author-card img {
+    margin-bottom: 1em;
+    width: 15em;
+}
+
+.book-item:hover {
+    cursor:pointer;
+    scale: 1.02;
+}
+
+.author-card {
+    background-color:white;
+    padding:0.5rem;
+    border-radius:0.5rem;
+}

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-book - Signup</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/signup.js" type="module"></script>
+</head>
+<body>
+    <header>
+        <section id="header-left">
+          <a href="index.html"
+            ><img class="logo" src="img/logo.webp" alt="Logo"
+          /></a>
+        </section>
+        <section id="header-right">
+            <div class="burger" id="burger">
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
+            </div>
+              <nav id="utility-phone">
+                  <ul>
+                    <li>
+                      <a href="browse-authors.html" id="authors-li">Authors</a>
+                    </li>
+                    <li>
+                      <a href="loan-now.html" id="books-li">Books</a>
+                    </li>
+                      <li><a href="signup.htm" class="logged-out">Sign up</a></li>
+                      <li><a href="login.htm" class="logged-out">Login</a></li>
+                  </ul>
+              </nav>
+            <nav id="utility">
+                <ul>
+                    <li>
+                        <a href="browse-authors.html" id="authors-li">Authors</a>
+                      </li>
+                      <li>
+                        <a href="loan-now.html" id="books-li">Books</a>
+                      </li>
+                    <li><a href="signup.htm" class="logged-out" id="signup">Sign up</a></li>
+                    <li><a href="login.htm" class="logged-out" id="login">Login</a></li>
+                </ul>
+            </nav>
+        </section>
+      </header>
+    <main>
+        <section id="signup-form">
+            <form id="frmSignup">
+                <div>
+                    <label for="txtFirstname">First name</label>
+                    <input type="text" id="txtFirstname" name="first_name" required placeholder="First name">
+                </div>
+                <div>
+                    <label for="txtLastname">Last name</label>
+                    <input type="text" id="txtLastname" name="last_name" required placeholder="Last name">
+                </div>
+                <div>
+                    <label for="txtEmail">E-mail</label>
+                    <input type="email" id="txtEmail" nam="email" required placeholder="Email">
+                </div>
+                <div>
+                    <label for="txtPassword">Password</label>
+                    <input type="password" id="txtPassword" name="password" required placeholder="Password" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&#])[A-Za-z\d@$!%*?&#]{8,}$" 
+                    title="Password must be at least 8 characters long and include lowercase, uppercase, numbers, and special characters.">
+                </div>
+                <div>
+                    <label for="confirmPassword">Confirm Password</label>
+                    <input type="password" id="confirmPassword" name="confirmPassword" required placeholder="Confirm Password">
+                </div>
+                <div>
+                    <label for="txtPhone">Phone no.</label>
+                <input type="tel" id="txtPhone" name="phone_number" placeholder="Phone no." >
+                </div>
+                <div>
+                <label for="birthDate">Birth date</label>
+                <input type="date" id="txtbirthDate" name="birth_date" placeholder="(YYYY-MM-DD)">
+                </div>
+                <label for="txtAddress">Address</label>
+                <input type="Address" id="txtAddress" name="address" placeholder="Address">
+                </div>
+                <div>
+                    <input type="submit" value="Sign up" id="signup2">
+                </div>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <div class="logo-footer">
+              <img src="img/logo.webp" alt="Logo">
+        </div>
+        <div class="some">
+          <a href="#" id="footer-icons"><img src="img/linkedin.png" alt="LinkedIn"></a>
+          <a href="#" id="footer-icons"><img src="img/twitter.png" alt="Twitter"></a>
+          <a href="#" id="footer-icons"><img src="img/facebook.png" alt="Facebook"></a>
+        </div>
+        <ul class="footer-ul">
+          <h3>Policy and TOS</h3>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms of Service</a></li>
+          <li><a href="#">Cookie Policy</a></li>
+        </ul>
+        <ul class="footer-menu">
+          <h3>Menu</h3>
+          <ul>
+            <li>
+              <a href="browse-authors.html" id="authors-li">Authors</a>
+            </li>
+            <li>
+              <a href="loan-now.html" id="books-li">Books</a>
+            </li>
+          </ul>
+        </ul>
+        <p id="copy">&copy; 2024 Oliver Thelin</p>
+      </footer>   
+</body>
+</html>

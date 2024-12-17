@@ -1,0 +1,56 @@
+#login-form {
+    margin-block:10%;
+    margin-inline:10%;
+    border: 2px solid black;
+    border-radius: 0.5rem;
+    background-color:white;
+    display:grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    align-items: center;
+    padding-top:5rem;
+    padding-bottom:5rem;
+}
+
+#frmLogin {
+display: flex;
+flex-direction: column;
+grid-column:2;
+}
+
+#frmLogin div {
+    margin-bottom:1rem;
+}
+
+#frmLogin input {
+    padding-top:1rem;
+    padding-bottom:1rem;
+    width:100%;
+    padding-left:0.5rem;
+    box-sizing: border-box;
+}
+
+#login2 {
+    background-color: var(--secondary-color);
+    color:#ffff;
+    border:none;
+    border-color: var(--secondary-color);
+    border-radius:0.5rem;
+    font-size: 1rem;
+    text-decoration: none;
+    width:100%;
+    max-width:100%;
+}
+
+#login2:hover {
+    cursor:pointer;
+    background-color: #e25d5d;
+}
+
+@media screen and (min-width:1024px) {
+    #login-form {
+        margin-block:8%;
+        margin-inline:25%;
+    }
+}
+
+

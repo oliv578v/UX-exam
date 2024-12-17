@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="js/logout.js" type="module"></script>
+    <script src="js/profile.js" type="module"></script>
+    <title>E-book - Profile</title>
+  </head>
+  <body>
+    <header>
+      <section id="header-left">
+        <a href="index.html"
+          ><img class="logo" src="img/logo.webp" alt="Logo"
+        /></a>
+      </section>
+      <section id="header-right">
+        <div class="burger" id="burger">
+          <span class="line"></span>
+          <span class="line"></span>
+          <span class="line"></span>
+      </div>
+        <nav id="utility-phone">
+            <ul>
+              <li>
+                <a href="browse-authors.html" id="authors-li">Authors</a>
+              </li>
+              <li>
+                <a href="loan-now.html" id="books-li">Books</a>
+              </li>
+                <li><a href="signup.htm" class="logged-out">Sign up</a></li>
+                <li><a href="login.htm" class="logged-out">Login</a></li>
+                <li><a class="logged-in" id="mobile-logout">Log out</a></li>
+                <li><a href="profile.htm" class="logged-in" id="profile-mobile">Profile</a></li>
+            </ul>
+        </nav>
+        <nav id="utility">
+          <ul>
+            <li>
+              <a href="browse-authors.html" id="authors-li">Authors</a>
+            </li>
+            <li>
+              <a href="loan-now.html" id="books-li">Books</a>
+            </li>
+            <li>
+              <a href="signup.htm" class="logged-out" id="signup">Sign up</a>
+            </li>
+            <li><a href="login.htm" class="logged-out" id="login">Login</a></li>
+            <li><button class="logged-in" id="logout">Log out</button></li>
+            <li>
+              <button href="profile.htm" class="logged-in" id="profile">
+                Profile
+              </button>
+            </li>
+          </ul>
+        </nav>
+      </section>
+    </header>
+    <main>
+      <article id="profile-info">
+        <h1>Profile Information</h1>
+        <div id="profile-container">
+    
+            <form id="profile-form">
+                <label for="first-name">First Name:</label>
+                <input type="text" id="first-name" name="first_name" required readonly>
+    
+                <label for="last-name">Last Name:</label>
+                <input type="text" id="last-name" name="last_name" required readonly>
+    
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required readonly>
+    
+                <label for="phone">Phone:</label>
+                <input type="text" id="phone" name="phone" required readonly>
+    
+                <label for="birth-date">Birth Date:</label>
+                <input type="date" id="birth-date" name="birth_date" required readonly>
+
+                <label for="membership-date">Membership date</label>
+                <input type="text" id="membership-date" name="membership_date" readonly>
+    
+                <label for="address">Address:</label>
+                <textarea id="address" name="address" required readonly></textarea>
+
+            </form>
+            <button type="submit" id="save-changes-btn" class="profileBtn">Save Changes</button>
+            <button id="edit-profile-btn" class="profileBtn">Edit Profile</button>
+            <button id="delete-profile-btn" class="deleteBtn">Delete Profile</button>
+        </div>
+      </article>
+    </main>
+  </body>
+  <footer>
+    <div class="logo-footer">
+          <img src="img/logo.webp" alt="Logo">
+    </div>
+    <div class="some">
+      <a href="#" id="footer-icons"><img src="img/linkedin.png" alt="LinkedIn"></a>
+      <a href="#" id="footer-icons"><img src="img/twitter.png" alt="Twitter"></a>
+      <a href="#" id="footer-icons"><img src="img/facebook.png" alt="Facebook"></a>
+    </div>
+    <ul class="footer-ul">
+      <h3>Policy and TOS</h3>
+      <li><a href="#">Privacy Policy</a></li>
+      <li><a href="#">Terms of Service</a></li>
+      <li><a href="#">Cookie Policy</a></li>
+    </ul>
+    <ul class="footer-menu">
+      <h3>Menu</h3>
+      <ul>
+        <li>
+          <a href="browse-authors.html" id="authors-li">Authors</a>
+        </li>
+        <li>
+          <a href="loan-now.html" id="books-li">Books</a>
+        </li>
+      </ul>
+    </ul>
+    <p id="copy">&copy; 2024 Oliver Thelin</p>
+  </footer>
+</html>

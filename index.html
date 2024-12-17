@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="js/logout.js" type="module"></script>
+    <title>E-book</title>
+  </head>
+  <body>
+    <header>
+      <section id="header-left">
+        <a href="index.html"
+          ><img class="logo" src="img/logo.webp" alt="Logo"
+        /></a>
+      </section>
+      <section id="header-right">
+        <div class="burger" id="burger">
+          <span class="line"></span>
+          <span class="line"></span>
+          <span class="line"></span>
+      </div>
+        <nav id="utility-phone">
+            <ul>
+              <li><a href="admin-dashboard.html" id="admin-li" class="admin-only">Admin dashboard</a></li>
+              <li>
+                <a href="browse-authors.html" id="authors-li">Authors</a>
+              </li>
+              <li>
+                <a href="loan-now.html" id="books-li">Books</a>
+              </li>
+                <li><a href="signup.htm" class="logged-out">Sign up</a></li>
+                <li><a href="login.htm" class="logged-out">Login</a></li>
+                <li><a class="logged-in mobile-logout">Log out</a></li>
+                <li><a href="profile.htm" class="logged-in profile-only" id="profile-mobile">Profile</a></li>
+            </ul>
+        </nav>
+
+        <nav id="utility">
+          <ul>
+            <li><a href="admin-dashboard.html" id="admin-li" class="admin-only">Admin dashboard</a></li>
+            <li>
+              <a href="browse-authors.html" id="authors-li">Authors</a>
+            </li>
+            <li>
+              <a href="loan-now.html" id="books-li">Books</a>
+            </li>
+              <li><a href="signup.htm" class="logged-out" id="signup">Sign up</a></li>
+              <li><a href="login.htm" class="logged-out" id="login">Login</a></li>
+              <li><button class="logged-in mobile-logout" id="logout">Log out</button></li>
+              <li><a href="profile.htm" class="logged-in profile-only" id="profile">Profile</a></li>
+          </ul>
+      </nav>
+      </section>
+    </header>
+    <main>
+      <section id="home">
+        <div id="CTA">
+          <h1>E-BOOK</h1>
+          <a href="loan-now.html"><button class="loan-now">Browse</button></a>
+        </div>
+        <div id="splash-image">
+          <img src="img/UX-splash-image-desktop.webp" alt="Splash image" />
+        </div>
+        <div id="splash-image-mobile">
+          <img src="img/UX-splash-image-mobile.webp" alt="Splash image" />
+        </div>
+      </section>
+    </main>
+  </body>
+  <footer>
+    <div class="logo-footer">
+          <img src="img/logo.webp" alt="Logo">
+    </div>
+    <div class="some">
+      <a href="#" id="footer-icons"><img src="img/linkedin.png" alt="LinkedIn"></a>
+      <a href="#" id="footer-icons"><img src="img/twitter.png" alt="Twitter"></a>
+      <a href="#" id="footer-icons"><img src="img/facebook.png" alt="Facebook"></a>
+    </div>
+    <ul class="footer-ul">
+      <h3>Policy and TOS</h3>
+      <li><a href="#">Privacy Policy</a></li>
+      <li><a href="#">Terms of Service</a></li>
+      <li><a href="#">Cookie Policy</a></li>
+    </ul>
+    <ul class="footer-menu">
+      <h3>Menu</h3>
+      <ul>
+        <li>
+          <a href="browse-authors.html" id="authors-li">Authors</a>
+        </li>
+        <li>
+          <a href="loan-now.html" id="books-li">Books</a>
+        </li>
+      </ul>
+    </ul>
+    <p id="copy">&copy; 2024 Oliver Thelin</p>
+  </footer>
+</html>

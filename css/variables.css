@@ -1,0 +1,19 @@
+:root {
+    /* Colors */
+    --background-color: #f4f3f8;
+    --primary-color:#6a5acd;
+    --secondary-color:#ff6b6b;
+    --text-color:#2c3e50;
+    --accent-color:#4ecdc4;
+    --depth-color:#45b7d1;
+    --colorError: red;
+
+    /* Font */
+    --font-family: "Poppins", serif;;
+
+    /* Header */
+    --nav-font-size: 1.2rem;
+    --header-padding: 1.5rem;
+
+    --font-size-title: 3rem;
+}

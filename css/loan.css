@@ -1,0 +1,190 @@
+@import url('variables.css');
+
+h1 {
+    text-align: center;
+    margin-top:2rem;
+}
+
+#search-bar {
+    text-align: center;
+    margin-bottom: 2rem;
+    margin-top:2rem;
+}
+
+#search-input {
+    width: 300px;
+    padding: 10px;
+    font-size: 16px;
+    border-radius:2rem;
+    border:none;
+    box-shadow: 3px 3px 4px  rgba(0,0,0,.1);
+}
+
+#search-btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#book-list{
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 5em));
+    gap: 3em;
+    margin-top: var(--bigMargin);
+    justify-content: center;
+    margin-bottom:4rem;
+}
+
+.book-item img {
+    margin-bottom: 1em;
+    width: 15em;
+}
+
+.book-item h3 {
+    margin: 0;
+    font-size: 18px;
+    color: var(--text-color);
+}
+
+.book-item p {
+    margin: 5px 0 0 0;
+    font-size: 14px;
+    color: var(--text-color);
+}
+
+.book-item:hover {
+    cursor:pointer;
+    scale: 1.02;
+}
+
+.book-item {
+    background-color:white;
+    padding:0.5rem;
+    border-radius:0.5rem;
+}
+
+#admin-section {
+    display: flex;
+    flex-direction: column;
+    background-color:var(--secondary-color);
+    padding:4rem;
+    margin-inline:2rem;
+    border-radius:0.5rem;
+    margin-bottom:2rem;
+}
+
+#admin-section button {
+    background-color: var(--accent-color);
+    border: 1px solid var(--accent-color);
+    color:white;
+    padding:0.5rem;
+    border-radius:0.5rem;
+    font-size: 1rem;
+    text-decoration: none;
+    width:50%;
+    margin-right:auto;
+    margin-left:auto;
+    margin-block:1rem;
+}
+
+#admin-section button:hover {
+    background-color: #44b1aa;
+    border: 1px solid #44b1aa;;
+    cursor:pointer;
+}
+
+#admin-section label {
+    margin-right:0.5rem;
+    width:50%;
+    margin-left:auto;
+    margin-right:auto;
+    color:white;
+}
+
+#admin-section input{
+    width:50%;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+#admin-section h3 {
+    color:white;
+    text-align:center;
+}
+
+#add-book-form, #add-author-form, #add-publisher-form {
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (min-width:750px) {
+
+    #header-left > a > img {
+        width: 50%;
+    }
+}
+
+
+/* Desktop */
+@media screen and (min-width:1024px) {
+
+    #admin-section {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1em;
+        justify-content: center;
+        margin-bottom:1rem;
+        margin-inline:4rem;
+        padding-block:4rem;
+        color:white;
+        background-color: var(--secondary-color);
+        border-radius: 1rem;
+    }
+
+    #add-book-form, #add-author-form, #add-publisher-form {
+        display: grid;
+        grid-template-columns: 5fr 2fr 2fr 2fr 2fr 4fr;
+        grid-template-rows: 1fr;
+        gap:1rem;
+    }
+
+    #add-book-form {
+        grid-row: 1;
+    }
+
+    #add-book-form input, #add-book-form label {
+        width:100%;
+    }
+
+    #add-author-form {
+        grid-row: 2;
+    }
+
+    #add-publisher-form {
+        grid-row: 3;
+    }
+
+    #admin-section button {
+        margin-left:1rem;
+        max-width:100%;
+        grid-column: 6;
+        grid-row:1;
+        margin-left:auto;
+        margin-right:auto;
+        margin-block:0;
+    }
+
+    #admin-section input{
+        width:100%;
+        height:2rem;
+        padding-left:0.5rem;
+    }
+
+    #admin-section h3 {
+        margin-right:2rem;
+        text-align:left;
+        grid-column: 1;
+    }
+
+}
